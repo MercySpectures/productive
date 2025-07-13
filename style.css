@@ -1,0 +1,648 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.container span{
+    font-size: 1.2rem;
+    color: #141414;
+}
+
+nav{
+    width: 100%;
+    height: 60px;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    background-color: #000;
+    color: #fff;
+}
+
+nav button#git{
+    padding: 0.6rem 1.8rem;
+    outline: none;
+    border: 1px solid #000;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    background-color: #fff;
+    color: #000;
+}
+
+nav button#git:hover {
+    background-color: #000;
+    color: #fff;
+    box-shadow: 2px 2px #fff;
+    border: 1px solid #fff;
+    transition: transform 0.2s ease-in-out;
+}
+
+nav button#git:active {
+    transform: scale(0.95);
+    transition: transform 0.2s ease-in-out;
+}
+
+.dateAndTime{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    background-image: url(./assets/dtBack.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.dateAndTime .left{
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.left .dt{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.dateAndTime h3{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.dateAndTime .right{
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.right .tr{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.right ul{
+    list-style: none;
+    line-height: 1.3rem;
+}
+
+.right ul li{
+    font-size: 1rem;
+}
+
+.tools{
+    width: 100%;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    gap: 10px;
+}
+
+.tools .card{
+    width: 250px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    cursor: pointer;
+}
+
+.card:active{
+    scale: 0.99;
+    transition: all ease-in-out;
+}
+
+.gradient{
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(#ffffff00, #00000093);
+}
+
+.card h4{
+    padding: 5px 10px;
+    color: #fff;
+    z-index: 2;
+    font-weight: 500;
+}
+
+.todoList{
+    background-image: url(./assets/todo.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.planner{
+    background-image: url(./assets/planner.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.motivation{
+    background-image: url(./assets/motivation.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.pomodoro{
+    background-image: url(./assets/pomodoro.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.goals{
+    background-image: url(./assets/goals.jpeg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+
+section{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+section .head{
+    width: 100%;
+    height: 60px;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    background-color: #000;
+    color: #fff;
+}
+
+.head button.close{
+    padding: 0.6rem 1.8rem;
+    outline: none;
+    border: 1px solid #000;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    background-color: #fff;
+    color: #000;
+}
+
+.head button.close:hover {
+    background-color: #000;
+    color: #fff;
+    box-shadow: 2px 2px #fff;
+    border: 1px solid #fff;
+    transition: transform 0.2s ease-in-out;
+}
+
+.head button.close:active {
+    transform: scale(0.95);
+    transition: transform 0.2s ease-in-out;
+}
+
+section#todoList .content{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.content button{
+    padding: 0.6rem 1.8rem;
+    outline: none;
+    border: 1px solid #000;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    background-color: #000;
+    color: #fff;
+}
+
+.content button:hover {
+    background-color: #fff;
+    color: #000;
+    box-shadow: 2px 2px #000;
+    border: 1px solid #000;
+    transition: transform 0.2s ease-in-out;
+}
+
+.content button:active {
+    transform: scale(0.95);
+    transition: transform 0.2s ease-in-out;
+}
+
+section#todoList .content .addItems{
+    width: 50%;
+    height: 100%;
+    max-height: 400px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    border: 1px solid #000;
+    padding: 10px 10px;
+}
+
+.content h2{
+    margin-bottom: 10px;
+    width: 100%;
+    height: 60px;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    background-color: #000;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+
+label{
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+input, textarea{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+}
+
+section#todoList .content .todoItemsContainer{
+    width: 50%;
+    min-height: 100%;
+    max-height: 400px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    border: 1px solid #000;
+    padding: 10px 10px;
+    position: relative;
+    gap: 10px;
+    overflow-y: auto;
+}
+
+section#todoList .content .todoItemsContainer .todoItems{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    position: relative;
+    gap: 10px;
+    overflow-y: auto;
+}
+
+.todoItems .todoItem{
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    border: 1px solid #000;
+    padding: 10px;
+    position: relative; /* for absolute .itembtns */
+    box-sizing: border-box;
+}
+
+.todoItem .txtContent{
+    width: 100%;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-right: 120px;
+    box-sizing: border-box;
+}
+
+.txtContent p{
+    font-size: 0.8rem;
+    color: #141414;
+}
+
+.txtContent h3{
+    font-weight: 500;
+}
+
+.todoItem input[type="checkbox"] {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    accent-color: #000;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+
+.todoItem .itembtns{
+    position: absolute;
+    right: 20px;
+}
+
+section#motivation .content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    border: 1px solid #000;
+    padding: 10px 10px;
+    position: relative;
+    gap: 10px;
+}
+
+.content .quote{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 100px 10px;
+    background: url("./assets/quote\ \(7\).jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+}
+
+.quote .gradient{
+    height: 100%;
+    background-image: linear-gradient(#00000093, #ffffff00);
+}
+
+.quote h3{
+    width: 60%;
+    color: #fff;
+    z-index: 2;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.quote span{
+    font-size: 0.8rem;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.quote button{
+    z-index: 2;
+    margin-top: 50px;
+}
+
+
+section#pomodoro .content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.content .timerDetails{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+.content .timer{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+#pomodoroTimer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+#pomodoroTimer h1{
+    font-size: 3.5rem;
+    background-color: #000;
+    color: #fff;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+#pomodoroTimer h1 span{
+    color: #fff;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+section#planner .content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.content .dailyPlanner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    flex-direction: column;
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+.dailyPlanner h2 span{
+    color: #fff;
+}
+
+.dailyHoursContainer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.dailyHoursContainer .dailyHours{
+    width: 49%;
+}
+
+.dailyHours input{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+section#goals .content{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+section#goals .content .addGoals{
+    width: 50%;
+    height: 100%;
+    max-height: 400px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    border: 1px solid #000;
+    padding: 10px 10px;
+}
+
+section#goals .content .goalsContainer{
+    width: 50%;
+    min-height: 100%;
+    max-height: 400px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    border: 1px solid #000;
+    padding: 10px 10px;
+    position: relative;
+    gap: 10px;
+    overflow-y: auto;
+}
+
+section#goals .content .goalsContainer .goalItems{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    position: relative;
+    gap: 10px;
+    overflow-y: auto;
+}
+
+.goalsContainer .goalItem{
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    border: 1px solid #000;
+    padding: 10px;
+    position: relative; /* for absolute .itembtns */
+    box-sizing: border-box;
+}
+
+.goalItem .txtContent{
+    width: 100%;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-right: 120px;
+    box-sizing: border-box;
+}
+
+.txtContent p{
+    font-size: 0.8rem;
+    color: #141414;
+}
+
+.txtContent h3{
+    font-weight: 500;
+}
+
+.todoItem input[type="checkbox"] {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    accent-color: #000;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+
+.goalItem .itembtns{
+    position: absolute;
+    right: 20px;
+}
+
+.goalsContainer h2 span{
+    color: #fff;
+}
+
+/* footer */
+
+section#footer {
+    width: 100%;
+    height: 60px;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    background-color: #000;
+    color: #fff;
+}
+
+section#footer a{
+    color: azure;
+}

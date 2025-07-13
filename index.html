@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productive</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./assets/chronometer.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <h1>productive</h1>
+            <button onclick="window.location.href='https://github.com/MercySpectures'" id="git">github</button>
+        </nav>
+        <div class="dateAndTime">
+            <div class="left">
+                <div class="dt">
+                    <span id="date">04 july, 2025</span>
+                    <h3 id="time">friday, 06:23:20 am</h3>
+                </div>
+                <span id="city">indore(mp)</span>
+            </div>
+            <div class="right">
+                <div class="tr">
+                    <h3 id="temp">20'C</h3>
+                    <span id="weatherStatus">light rain</span>
+                </div>
+                <ul><!-- humidity, pressure and wind --></ul>
+            </div>
+        </div>
+        <div class="tools">
+            <div class="card todoList">
+                <div class="gradient"></div>
+                <h4> to do list</h4>
+            </div>
+            <div class="card planner">
+                <div class="gradient"></div>
+                <h4> daily planner</h4>
+            </div>
+            <div class="card motivation">
+                <div class="gradient"></div>
+                <h4> motivation</h4>
+            </div>
+            <div class="card pomodoro">
+                <div class="gradient"></div>
+                <h4> pomodoro timer</h4>
+            </div>
+            <div class="card goals">
+                <div class="gradient"></div>
+                <h4> daily goals</h4>
+            </div>
+        </div>
+        <section id="todoList">
+            <div class="head">
+                <h1>to do list</h1>
+                <button class="close">close</button>
+            </div>
+            <div class="content">
+                <div class="addItems">
+                    <h2>add items</h2>
+                    <label for="title">title</label>
+                    <input type="text" name="title" id="title" placeholder="enter title">
+                    <label for="description">description</label>
+                    <textarea name="description" id="desc" placeholder="enter description"></textarea>
+                    <button id="create">create</button>
+                </div>
+                <div class="todoItemsContainer">
+                    <h2 style="position: sticky; top: 0;">to do</h2>
+                    <div class="todoItems"></div>
+                </div>
+            </div>
+        </section>
+        <section id="planner">
+            <div class="head">
+                <h1>planner</h1>
+                <button class="close">close</button>
+            </div>
+            <div class="content">
+                <div class="dailyPlanner">
+                    <h2>plan your day <span style="font-weight: 400;"><span id="plannerDate"> </span> | <span id="plannerTime"></span></span></h2>
+                    <div class="dailyHoursContainer">
+                        <!-- <div class="dailyHours">
+                            <label for="title">title</label>
+                            <input type="text" name="title" id="title" placeholder="enter title">
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="motivation">
+            <div class="head">
+                <h1>motivation</h1>
+                <button class="close">close</button>
+            </div>
+            <div class="content">
+                <h2>get quote</h2>
+                <div class="quote">
+                    <div class="gradient"></div>
+                    <h3>qwertyuiop qwertyuiop wertyuiop qwertyuiop</h3>
+                    <span>author name</span>
+                    <button>get motivation</button>
+                </div>
+            </div>
+        </section>
+        <section id="pomodoro">
+            <div class="head">
+                <h1>pomodoro</h1>
+                <button class="close">close</button>
+            </div>
+            <div class="content">
+                <div class="timer">
+                    <h2>set timer</h2>
+                    <div id="pomodoroTimer">
+                        <h1><span>set values</span>00:00:00</h1>
+                    </div>
+                    <div class="startReset">
+                        <button id="create">start</button>
+                        <button id="pause">pause</button>
+                        <button id="reset">reset</button>
+                    </div>
+                </div>
+                <div class="timerDetails">
+                    <h2>set timer</h2>
+                    <label for="title">title</label>
+                    <input type="text" name="title" id="title" placeholder="enter title">
+                    <label for="hours">hours</label>
+                    <input type="text" name="hours" id="hours" placeholder="enter hours"></input>
+                    <label for="minutes">minutes</label>
+                    <input type="text" name="minutes" id="minutes" placeholder="enter minutes"></input>
+                    <label for="seconds">seconds</label>
+                    <input type="text" name="seconds" id="seconds" placeholder="enter seconds"></input>
+                    <div class="createSetValues">
+                        <button id="set">set</button>
+                        <button id="focus">focus</button>
+                        <button id="shortBreak">short break</button>
+                        <button id="longBreak">long break</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="goals">
+            <div class="head">
+                <h1>goals</h1>
+                <button class="close">close</button>
+            </div>
+            <div class="content">
+                <div class="addGoals">
+                    <h2>add goals</h2>
+                    <label for="title">title</label>
+                    <input type="text" name="title" id="title" placeholder="enter title">
+                    <label for="description">description</label>
+                    <textarea name="description" id="desc" placeholder="enter description"></textarea>
+                    <button id="create">create</button>
+                </div>
+                <div class="goalsContainer">
+                    <h2 style="position: sticky; top: 0;">goals <span style="font-weight: 400;"><span id="goalDate"> </span> | <span id="goalTime"></span></span></h2>
+                    <div class="goalItems"></div>
+                </div>
+            </div>
+        </section>
+        <section id="footer">
+            <p>made with ❤ by <a href="https://github.com/MercySpectures">@mercyspectures</a></p>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
