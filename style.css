@@ -712,7 +712,8 @@ section#footer a{
     }
 
     section#goals .content .goalsContainer {
-        min-height: 30%;
+        min-height: auto;
+        height: 100%;
     }
 
     .goalsContainer h2 span{
