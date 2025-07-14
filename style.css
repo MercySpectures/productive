@@ -646,3 +646,77 @@ section#footer {
 section#footer a{
     color: azure;
 }
+
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+    /* Add styles here */
+
+    .tools{
+        flex-direction: column;
+    }
+
+    .tools .card{
+        width: 100%;
+        height: 450px;
+    }
+
+    section{
+        height: fit-content;
+    }
+
+    section .content{
+        flex-direction: column;
+    }
+
+    section#todoList .content .addItems, section#todoList .content .todoItemsContainer{
+        width: 100%;
+        height: 100%;
+    }
+
+    section#todoList .content .todoItemsContainer{
+        min-height: auto;
+        max-height: auto;
+    }
+
+    .dailyPlanner h2 span{
+        color: #fff;
+        display: block;
+        font-size: 12px;
+    }
+
+    .dailyHoursContainer .dailyHours {
+        width: 100%;
+    }
+
+    .quote h3 {
+        width: 80%;
+    }
+
+    .content .timer, .content .timerDetails{
+        width: 100%;
+    }
+
+    .timerDetails .createSetValues{
+        width: 100%;
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    section#goals .content .addGoals, section#goals .content .goalsContainer{
+        width: 100%;
+    }
+
+    section#goals .content .goalsContainer {
+        min-height: 30%;
+    }
+
+    .goalsContainer h2 span{
+        color: #fff;
+        display: block;
+        font-size: 12px;
+    }
+
+}
