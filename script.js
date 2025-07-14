@@ -78,6 +78,9 @@ function getWeatherData() {
         `pressure: ${data.main.pressure} hPa`,
         `wind: ${data.wind.speed} km/h`,
       ];
+      document.querySelector(
+          ".dateAndTime .right ul"
+        ).innerHTML = "";
       otherWeatherDetails.forEach((e) => {
         document.querySelector(
           ".dateAndTime .right ul"
